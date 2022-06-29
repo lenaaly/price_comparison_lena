@@ -22,6 +22,6 @@ def item_name(question):
 
 item_name("Enter the items name: ")
 print(name_list)
-
+print()
 
 

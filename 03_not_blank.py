@@ -4,19 +4,26 @@
 
 '''
 
-def not_blank(question, error_msg):
-    valid = False
+name_list = []
 
-    while not valid:
-        response = input(question)
+def item_name(question, error_msg):
 
-        if response != "":
-            return response
-        else:
+    response = input(question)
+
+    while response != "xxx" or "":
+        name_list.append(response)
+
+        if response == "xxx":
+            break
+
+        elif response == "":
             print(error_msg)
+        else:
+            response = input(question)
 
 
 
-item_name = not_blank("Please enter the items name: ",
-                      "This cannot be blank - " 
-                      "Please enter the items name: ")
+item_name("Enter the items name: ",
+          "Please enter an item - this cannot be blank")
+print(name_list)
+print()

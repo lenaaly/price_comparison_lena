@@ -1,9 +1,9 @@
 """
-item name v1 - starting with a simple def of item_name and making the program
+item name v1 - making the program
 work for asking the user the items name more than once
 
-
 """
+
 name_list = []
 
 def item_name(question):
@@ -22,6 +22,5 @@ def item_name(question):
 
 item_name("Enter the items name: ")
 print(name_list)
-print()
 
 

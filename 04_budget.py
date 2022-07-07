@@ -7,16 +7,12 @@ v1.1 - making sure the budget entered is an integer between 0-100
 """
 
 def budget(question, error_msg):
+    response = int(input(question))
 
     valid = False
     while not valid:
-        response = int(input(question))
+        return(response)
         print("Your budget is ${:.2f}".format(response))
-
-        if response 'valid':
-            return response
-        else:
-            print("The input was not a valid integer.")
 
 
 

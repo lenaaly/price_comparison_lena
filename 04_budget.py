@@ -6,18 +6,28 @@ work for asking the user their budget.
 v1.1 - making sure the budget entered is an integer between 0-100
 """
 
-def budget(question, error_msg):
-    response = int(input(question))
+def num_checker(question):
+    error = "Please enter a valid number: "
 
     valid = False
     while not valid:
-        return(response)
-        print("Your budget is ${:.2f}".format(response))
+        try:
+            budget = int(input(question))
+
+            if budget <= 0:
+                return budget
+                print(error)
+            else:
+                print()
+                print("Your budget is ${:.2f}".format(budget))
+                break
+
+        except ValueError:
+            print(error)
 
 
 
-budget("What is your budget? ", "Please enter a valid integer: ")
 
-
+num_checker("What is your budget? ")
 
 

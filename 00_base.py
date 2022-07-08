@@ -25,5 +25,8 @@ item_info = [[name_list], [price_list], [weight_list]]
 
 #  **** MAIN ROUTINE ****
 
-#
+# asking the user what their budget is
+
+
+# asking the user the names of their items
 
